@@ -19,7 +19,8 @@ RUN set -xe \
     && cd ../ \
     && rm -rf ${workdir} \
     && apt-get purge -y --auto-remove ${deps} \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && useradd sockuser && echo sockuser:ucsH5Mtj+]Gx*%q8 | chpasswd
 
 COPY dante6.cfg /etc/dante6.cfg
 
