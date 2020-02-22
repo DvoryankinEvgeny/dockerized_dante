@@ -1,0 +1,7 @@
+version: '3'
+services: 
+    proxy:
+        build: .
+        ports: 
+            - "44222:1080"
+        restart: always
